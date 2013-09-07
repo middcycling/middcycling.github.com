@@ -1,7 +1,35 @@
-
-
 @import "syntax.scss";
 
 body {
 	background: #fff;
+}
+
+#bg_2013 {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+	
+	#h_stripe_1 {
+		margin-top: 150px;
+		height: 200px;
+		width: 100%;
+		background: #041735;
+	}
+	#h_stripe_2 {
+		margin-top: 25px;
+		height: 100px;
+		width: 100%;
+		background: #55a6d5;
+	}
+}
+
+#wrapper { /* make sure the content bg is white */
+	height: auto;
+	width: auto;
+	margin: 0px auto;
+	max-width: 1000px;
+	background: #fff;
+	/* Box Shadow */
+	box-shadow: 0px 0px 5px #333;
 }

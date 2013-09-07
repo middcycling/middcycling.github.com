@@ -3,11 +3,17 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="twelve columns"><img src="img/team_road.jpg"/></div>
+</div>
+<div class="row">
+  <div class="four columns">
+    <h3>Col 1</h3>
+  </div>
+  <div class="four columns">
+    <h3>Col 2</h3>
+  </div>
+  <div class="four columns">
+    <h3>Col 3</h3>
+  </div>
 </div>
