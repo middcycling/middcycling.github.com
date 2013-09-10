@@ -30,14 +30,20 @@ html
 					ul.eight.columns
 						li: a(href='#') News
 						li: a(href='#') Events
-						li: a(href='#') About
+						li: a(href='about.html') About
 						li: a(href='#') Rides
 						li: a(href='kits.html') Kits
 
 			//- begin page content
 			{{ content }}
-
 			//- end page content
+
+			.row#footer: .twelve.columns
+				Site designed and coded by <a href="http://tnbeatty.github.com">Nate Beatty</a>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				Based on kit designs by <a href="http://shopskida.com">Corinne Prevot</a>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>
 
 		//- javascripts (load just before closing body tag)
 		script(src='js/libs/jquery-2.0.2.min.js')
