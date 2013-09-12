@@ -4,10 +4,16 @@
 |---
 
 .row
-	.twelve.columns: .responsive-height
-		.index-slider: .slider
-			.slide: img(src='/img/carousel/team_road.jpg')
-			.slide: img(src='/img/carousel/ride_dunmore.jpg')
+	.twelve.columns: .responsive-height: .slider-container
+		.index-slider
+			.slider
+				.slide: img(src='/img/carousel/team_road.jpg')
+				.slide: img(src='/img/carousel/ride_dunmore.jpg')
+			//- .control
+			//- .selector
+			//- .selector
+			//- .selector
+			//- .selector
 
 .row
 	.four.columns
@@ -25,5 +31,5 @@
 			{% endfor %}
 
 	.four.columns
-		h3 Riding with the Team
+		h3 The Team
 		hr
