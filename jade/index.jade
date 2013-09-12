@@ -15,7 +15,13 @@
 	.four.columns
 		h3 Recent News
 		hr
-		p There is no recent news. Check back soon!
+		ul.circle.articlelist
+			{% for article in site.categories.news limit:5 %}
+			li 
+				a(href='{{ article.url }}'){{ article.title }}
+				ul: li.date {{ article.date | date_to_string }} - {{ article.author }}
+			{% endfor %}
+
 	.four.columns
 		h3 Riding with the Team
 		hr

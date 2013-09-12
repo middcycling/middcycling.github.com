@@ -14,7 +14,13 @@ title: Home Base
   <div class="four columns">
     <h3>Recent News</h3>
     <hr/>
-    <p>There is no recent news. Check back soon!</p>
+    <ul class="circle articlelist">{% for article in site.categories.news limit:5 %}
+      <li> <a href="{{ article.url }}">{{ article.title }}</a>
+        <ul>
+          <li class="date">{{ article.date | date_to_string }} - {{ article.author }}</li>
+        </ul>
+      </li>{% endfor %}
+    </ul>
   </div>
   <div class="four columns">
     <h3>Riding with the Team</h3>

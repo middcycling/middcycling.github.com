@@ -177,6 +177,9 @@
 .highlight .il { color: #009999; }
 
 /* Literal.Number.Integer.Long */
+/******************
+** Global Styles **
+*******************/
 body { background: #fff; }
 
 #bg_2013 { position: fixed; height: 100%; width: 100%; z-index: -10; }
@@ -185,6 +188,14 @@ body { background: #fff; }
 
 #wrapper { /* make sure the content bg is white */ height: auto; width: auto; margin: 0px auto; max-width: 1000px; background: #fff; /* Box Shadow */ box-shadow: 0px 0px 5px #333; }
 
-#twitter-feed { text-align: center; }
-
 #footer h6 { font-size: 12px; }
+
+/***************
+** Index Page **
+****************/
+.articlelist .date { font-size: 12px; }
+
+/**************
+** News Page **
+***************/
+#twitter-feed { text-align: center; }
