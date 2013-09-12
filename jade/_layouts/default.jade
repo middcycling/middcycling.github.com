@@ -29,21 +29,27 @@ html
 							img(src='/img/logo_middcycltxt.png', gumby-retina)
 					ul.eight.columns
 						li: a(href='/news.html') News
-						li: a(href='#') Events
+						li: a(href='#', style='color: #ccc;') Events
 						li: a(href='/about.html') About
-						li: a(href='#') Rides
+						li: a(href='#', style='color: #ccc;') Rides
 						li: a(href='/kits.html') Kits
 
 			//- begin page content
 			{{ content }}
 			//- end page content
 
-			.row#footer: .twelve.columns
-				Site designed and coded by <a href="http://tnbeatty.github.com">Nate Beatty</a>
-				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-				Based on kit designs by <a href="http://shopskida.com">Corinne Prevot</a>
-				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-				<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>
+			.row#footer: .eight.columns.centered.text-center
+				.three.columns: img(src='/img/sponsors/clifbar.png')
+				.three.columns: img(src='/img/sponsors/rudy.png')
+				.three.columns: img(src='/img/sponsors/vtpb.png')
+				.three.columns: img(src='/img/sponsors/skida.png')
+				.row: .twelve.columns.text-center
+					h6 Web design by <a href="http://natebeatty.com">Nate Beatty</a>
+				//- Site designed and coded by <a href="http://tnbeatty.github.com">Nate Beatty</a>
+				//- &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				//- Based on kit designs by <a href="http://shopskida.com">Corinne Prevot</a>
+				//- &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				//- <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>
 
 		//- javascripts (load just before closing body tag)
 		script(src='/js/libs/jquery-2.0.2.min.js')
