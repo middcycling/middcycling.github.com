@@ -24,6 +24,17 @@ $(function() {
 		$(this).trigger('gumby.trigger');
 	});
 
+	// Index page slider
+	$('.index-slider').iosSlider({
+		snapToChildren: true,
+		snapSlideCenter: true,
+		infiniteSlider: true,
+		autoslide: true,
+		autoSlideTimer: 2500,
+		keyboardControls: true,
+		scrollbar: false
+	});
+
 	var isNews = (location.pathname.split("/")[1] == 'news') ? true : false;
 	if (isNews) {
 		// fixNewsImages();
