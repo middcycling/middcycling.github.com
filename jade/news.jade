@@ -1,0 +1,23 @@
+|---|
+|layout: default
+|title: About
+|---
+
+.row
+	.twelve.columns
+		h3 News
+		hr
+
+.row
+	.eight.columns
+		{% for article in site.categories.news limit:6 %}
+		h5: a(href="{{ article.url }}"){{ article.title }}
+		h6: {{ article.date | date_to_string }} - {{ article.author }}
+		p {{ article.content | strip_html | truncatewords:50 }} <a href="{{ article.url }}">read more</a>.
+		{% endfor %}
+
+	.four.columns#twitter-feed
+		<!-- begin twitter widget -->
+		<a class="twitter-timeline" href="https://twitter.com/middcycling" data-widget-id="301359331687940096">Tweets by @middcycling</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!-- end twitter widget -->

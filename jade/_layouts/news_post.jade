@@ -1,0 +1,15 @@
+|---|
+|layout: default
+|---
+
+.row
+	.twelve.columns
+		h2 {{ page.title }}
+		hr
+		h5 {{ page.date | date_to_string }}  |  {{ page.author }}
+		br: br
+
+
+.row
+	.twelve.columns
+		{{ content }}

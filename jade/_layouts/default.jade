@@ -13,7 +13,7 @@ html
 		link(rel='stylesheet', href='/css/main.css')
 
 		//- javascripts
-		script(src='js/libs/modernizr-2.6.2.min.js')
+		script(src='/js/libs/modernizr-2.6.2.min.js')
 
 	body
 		#bg_2013
@@ -26,13 +26,13 @@ html
 						i.icon-menu
 					h1.four.columns.logo
 						a(href='/')
-							img(src='img/logo_middcycltxt.png', gumby-retina)
+							img(src='/img/logo_middcycltxt.png', gumby-retina)
 					ul.eight.columns
-						li: a(href='#') News
+						li: a(href='/news.html') News
 						li: a(href='#') Events
-						li: a(href='about.html') About
+						li: a(href='/about.html') About
 						li: a(href='#') Rides
-						li: a(href='kits.html') Kits
+						li: a(href='/kits.html') Kits
 
 			//- begin page content
 			{{ content }}
@@ -46,20 +46,20 @@ html
 				<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>
 
 		//- javascripts (load just before closing body tag)
-		script(src='js/libs/jquery-2.0.2.min.js')
+		script(src='/js/libs/jquery-2.0.2.min.js')
 
 		//- Gumby Initialization
-		script(src='js/libs/gumby.js')
-		script(src='js/libs/ui/gumby.retina.js')
-		script(src='js/libs/ui/gumby.fixed.js')
-		script(src='js/libs/ui/gumby.skiplink.js')
-		script(src='js/libs/ui/gumby.toggleswitch.js')
-		script(src='js/libs/ui/gumby.checkbox.js')
-		script(src='js/libs/ui/gumby.radiobtn.js')
-		script(src='js/libs/ui/gumby.tabs.js')
-		script(src='js/libs/ui/gumby.navbar.js')
-		script(src='js/libs/ui/jquery.validation.js')
-		//- script(src='js/libs/gumby.parallax.js')
-		script(src='js/libs/gumby.init.js')
+		script(src='/js/libs/gumby.js')
+		script(src='/js/libs/ui/gumby.retina.js')
+		script(src='/js/libs/ui/gumby.fixed.js')
+		script(src='/js/libs/ui/gumby.skiplink.js')
+		script(src='/js/libs/ui/gumby.toggleswitch.js')
+		script(src='/js/libs/ui/gumby.checkbox.js')
+		script(src='/js/libs/ui/gumby.radiobtn.js')
+		script(src='/js/libs/ui/gumby.tabs.js')
+		script(src='/js/libs/ui/gumby.navbar.js')
+		script(src='/js/libs/ui/jquery.validation.js')
+		//- script(src='/js/libs/gumby.parallax.js')
+		script(src='/js/libs/gumby.init.js')
 
-
+		script(src='/js/main.js')

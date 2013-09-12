@@ -1,0 +1,23 @@
+---
+layout: default
+title: About
+---
+<div class="row">
+  <div class="twelve columns">
+    <h3>News</h3>
+    <hr/>
+  </div>
+</div>
+<div class="row">
+  <div class="eight columns">{% for article in site.categories.news limit:6 %}
+    <h5><a href="{{ article.url }}">{{ article.title }}</a></h5>
+    <h6>{{ article.date | date_to_string }} - {{ article.author }}</h6>
+    <p>{{ article.content | strip_html | truncatewords:50 }} <a href="{{ article.url }}">read more</a>.</p>{% endfor %}
+  </div>
+  <div id="twitter-feed" class="four columns">
+    <!-- begin twitter widget -->
+    <a class="twitter-timeline" href="https://twitter.com/middcycling" data-widget-id="301359331687940096">Tweets by @middcycling</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- end twitter widget -->
+  </div>
+</div>

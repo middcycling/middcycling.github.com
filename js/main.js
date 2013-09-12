@@ -23,5 +23,15 @@ $(function() {
 	$('#skip-switch').on('gumby.onComplete', function() {
 		$(this).trigger('gumby.trigger');
 	});
+
+	var isNews = (location.pathname.split("/")[1] == 'news') ? true : false;
+	if (isNews) {
+		// fixNewsImages();
+	}
 });
+
+var fixNewsImages = function () {
+	console.log('Fixing news images.');
+	$('img').wrap('<div class="five columns image photo news"></div>');
+}
 

@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,     // Enable dynamic expansion.
           cwd: '',      // Src matches are relative to this path.
-          src: ['*.html', '_layouts.html'], // Actual pattern(s) to match.
+          src: ['*.html', '_layouts/*.html'], // Actual pattern(s) to match.
           dest: '',   // Destination path prefix.
           ext: '.html',   // Dest filepaths will have this extension.
         }],
