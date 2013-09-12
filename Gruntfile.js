@@ -12,11 +12,11 @@ module.exports = function(grunt) {
     },
     watch: {
       jade: {
-        files: ['jade/**/*.jade'],
+        files: ['_jade/**/*.jade'],
         tasks: ['jade', 'string-replace'],
       },
       compass: {
-        files: ['sass/**/*.scss'],
+        files: ['_sass/**/*.scss'],
         tasks: ['compass']
       }
     },
@@ -27,10 +27,24 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'jade',
+          cwd: '_jade',
           src: ['**/*.jade'],
           dest: '', // write to the home directory
           ext: '.html'
+        }]
+      }
+    },
+    coffee: {
+      dev: {
+        options: {
+          join: true
+        },
+        files: [{
+          expand: true,
+          cwd: '_coffee',
+          src: ['**/*.coffee'],
+          dest: 'js',
+          ext: '.js'
         }]
       }
     },
@@ -57,13 +71,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-string-replace');
 
   // Define tasks
   grunt.registerTask('build', [
     'compass',
     'jade',
-    'string-replace' // Must come right after 'jade'
+    'string-replace', // Must come right after 'jade'
+    'coffee'
     ]);
 
   // Register tasks

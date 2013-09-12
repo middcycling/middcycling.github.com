@@ -29,7 +29,7 @@ $(function() {
 		snapToChildren: true,
 		snapSlideCenter: true,
 		infiniteSlider: true,
-		autoslide: true,
+		autoSlide: true,
 		autoSlideTimer: 2500,
 		keyboardControls: true,
 		scrollbar: false
