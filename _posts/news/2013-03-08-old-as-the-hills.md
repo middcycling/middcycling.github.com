@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: Old as the Hills
 author: Nate Beatty
 abstract: Recently, Midd Cycling alum Mike Gaskin did some research about the team history. Cycling is the oldest uniformed team sport at Middlebury College! We will be celebrating 130 years in 2014.

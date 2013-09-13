@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: Rutgers Weekend Retrospect
 author: Jake Barker
 abstract: The 2013 ECCC Road season has arrived! We headed to Rutgers University for a three-race, two-day omnium season opener. It was a great weekend, with solid results and good times had by all.

@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: GMSR Recap
 author: Middlebury Cycling
 abstract: Middlebury cyclists compete in the Green Mountain Stage Race.

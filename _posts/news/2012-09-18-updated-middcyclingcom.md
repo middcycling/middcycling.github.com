@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: Updated Middcycling.com
 author: Middlebury Cycling
 abstract: A redesigned middcycling.com for a new season.

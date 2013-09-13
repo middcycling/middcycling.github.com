@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: Ride, Roast, and Rock
 author: Middlebury Cycling
 abstract: This past weekend, the Addison Central Teens organization hosted a benefit ride for the local teen center. Although it rained on the day of the event for the third year in a row, the turnout was excellent and the riders enjoyed a pig roast and live band under a tent following their ride.

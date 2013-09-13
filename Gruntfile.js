@@ -18,6 +18,10 @@ module.exports = function(grunt) {
       compass: {
         files: ['_sass/**/*.scss'],
         tasks: ['compass']
+      },
+      coffee: {
+        files: ['_coffee/**/*.coffee'],
+        tasks: ['coffee']
       }
     },
     jade: {

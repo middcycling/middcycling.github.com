@@ -1,0 +1,18 @@
+|---|
+|layout: default
+|title: Events
+|---
+
+.row
+	.twelve.columns
+		h3 Events
+		hr
+
+.row
+	.eight.columns
+		{% for event in site.categories.events reversed %}
+		//- {% if site.time event.date %}
+		{% if true %}
+		p {{ event.title }}
+		{% endif %}
+		{% endfor %}

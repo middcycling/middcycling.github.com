@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: Middlebury Cycling, Now Powered By VTPB!
 author: Alex Abarbanel-Grossman
 abstract: We at the Middlebury Cycling Club are thrilled to announce our new partnership with Vermont Peanut Butter!

@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: NYC Weekend Retrospect
 author: Jake Barker
 abstract: 

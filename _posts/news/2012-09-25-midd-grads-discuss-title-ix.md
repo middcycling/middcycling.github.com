@@ -1,5 +1,5 @@
 ---
-layout: news_post
+layout: news
 title: Midd Grads Discuss Title IX
 author: Middlebury Cycling
 abstract: Four generations of Middlebury graduates and stellar athletes join forces to tell their stories about how Title IX has impacted their lives.
