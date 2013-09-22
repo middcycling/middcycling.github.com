@@ -11,8 +11,8 @@
 .row
 	.eight.columns
 		{% for event in site.categories.events reversed %}
-		//- {% if site.time event.date %}
-		{% if true %}
-		p {{ event.title }}
+		{% if event.starttime >= site.time %}
+		h4 {{ event.title }} - {{ event.starttime | date: "%b %d, %Y" }}
+		p {{ event.content | strip_html | truncatewords:50 }}
 		{% endif %}
 		{% endfor %}

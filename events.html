@@ -9,8 +9,11 @@ title: Events
   </div>
 </div>
 <div class="row">
-  <div class="eight columns">{% for event in site.categories.events reversed %}{% if true %}
-    <p>{{ event.title }}</p>{% endif %}
+  <div class="eight columns">
+    {% for event in site.categories.events reversed %}
+    {% if event.starttime >= site.time %}
+    <h4>{{ event.title }} - {{ event.starttime | date: "%b %d, %Y" }}</h4>
+    <p>{{ event.content | strip_html | truncatewords:50 }}</p>{% endif %}
     {% endfor %}
   </div>
 </div>
