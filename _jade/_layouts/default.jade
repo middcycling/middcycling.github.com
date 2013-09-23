@@ -38,7 +38,8 @@ html
 			{{ content }}
 			//- end page content
 
-			.row#footer: hr
+			.row#footer
+				hr
 				.eight.columns.centered.text-center
 					.three.columns: img(src='/img/sponsors/clifbar.png')
 					.three.columns: img(src='/img/sponsors/rudy.png')
@@ -51,8 +52,23 @@ html
 					//- Based on kit designs by <a href="http://shopskida.com">Corinne Prevot</a>
 					//- &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 					//- <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>
+		#social
+			a.switch(href='#', gumby-trigger='#signup-modal'): i.icon-mail
+			a(href='http://facebook.com/middcycling'): i.icon-twitter-circled
+			a(href='http://twitter.com/middcycling'): i.icon-facebook-circled
 
-		//- include ../_partials/mce-form.jade
+		.modal#signup-modal
+			.content
+				a.close.switch(gumby-trigger='|#signup-modal'): i.icon-cancel
+				.row
+					.ten.columns.centered.text-center
+						h2 Mailing List
+						p Stay up-to-date with the latest team news! Fill out the form below to make sure you never miss a ride, a kit order, or a tale of an epic win!
+						hr
+				.row: .eight.columns.centered
+					include ../_partials/mce-form.jade
+
+
 		include ../_partials/ga-template.jade
 
 		//- javascripts (load just before closing body tag)

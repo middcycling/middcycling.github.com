@@ -44,6 +44,22 @@ body {
 	}
 }
 
+#social { // This lives in the lower right corner
+	height: 40px;
+	width: auto;
+	padding: 5px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+	z-index: 1000;
+
+	font-size: 30px;
+
+	background: #fff;
+	box-shadow: 0px 0px 5px #333;
+}
+
 /***************
 ** Index Page **
 ****************/
@@ -86,7 +102,7 @@ body {
 	display: inline-block;
 	margin: 0px auto;
 
-	z-index: 1000;
+	z-index: 500;
 
 	background: red;
 

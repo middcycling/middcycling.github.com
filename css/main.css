@@ -190,6 +190,8 @@ body { background: #fff; }
 
 #footer h6 { font-size: 12px; }
 
+#social { height: 40px; width: auto; padding: 5px; position: fixed; bottom: 0; right: 0; z-index: 1000; font-size: 30px; background: #fff; box-shadow: 0px 0px 5px #333; }
+
 /***************
 ** Index Page **
 ****************/
@@ -201,7 +203,7 @@ body { background: #fff; }
 .index-slider .slider { width: 100%; height: 100%; }
 .index-slider .slider .slide { float: left; width: 100%; height: 100%; }
 
-.slider-container .control { position: relative; bottom: 25px; height: 8px; width: 200px; display: inline-block; margin: 0px auto; z-index: 1000; background: red; }
+.slider-container .control { position: relative; bottom: 25px; height: 8px; width: 200px; display: inline-block; margin: 0px auto; z-index: 500; background: red; }
 .slider-container .control .selector { height: 100%; width: 15px; margin: 0 10px 0 0; float: left; background: #fff; }
 
 .articlelist .date { font-size: 12px; }
