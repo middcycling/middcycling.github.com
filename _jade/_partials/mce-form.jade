@@ -15,12 +15,26 @@ form.validate(action='http://middcycling.us7.list-manage.com/subscribe/post?u=a4
 				input(name='group[3653]', id='mce-group[3653]-3653-0', type='radio', value='1', checked='checked')
 				span
 				| &nbsp;Current Middlebury Student
-			label.radio.checked(for='mce-group[3653]-3653-1')
-				input(name='group[3653]', id='mce-group[3653]-3653-1', type='radio', value='2', checked='checked')
+			label.radio(for='mce-group[3653]-3653-1')
+				input(name='group[3653]', id='mce-group[3653]-3653-1', type='radio', value='2')
 				span
 				| &nbsp;Middlebury Alumnus / Alumna
-			label.radio.checked(for='mce-group[3653]-3653-2')
-				input(name='group[3653]', id='mce-group[3653]-3653-2', type='radio', value='4', checked='checked')
+			label.radio(for='mce-group[3653]-3653-2')
+				input(name='group[3653]', id='mce-group[3653]-3653-2', type='radio', value='4')
 				span
 				| &nbsp;Other
+		li.field
+			b Preferred Discipline:
+			label.checkbox(for='mce-group[3701]-3701-0')
+				input(name='group[3701][8]', id='mce-group[3701]-3701-0', type='checkbox', value='8')
+				span
+				| &nbsp;Road
+			label.checkbox(for='mce-group[3701]-3701-1')
+				input(name='group[3701][16]', id='mce-group[3701]-3701-1', type='checkbox', value='16')
+				span
+				| &nbsp;Mountain
+			label.checkbox(for='mce-group[3701]-3701-2')
+				input(name='group[3701][32]', id='mce-group[3701]-3701-2', type='checkbox', value='32')
+				span
+				| &nbsp;Cyclocross
 	.medium.primary.btn: input(type='submit', value='Subscribe', id='mc-embedded-subscribe')
