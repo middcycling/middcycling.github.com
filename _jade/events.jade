@@ -11,8 +11,9 @@
 .row
 	.eight.columns
 		{% for event in site.categories.events reversed %}
-		{% if event.starttime >= site.time %}
-		h4 {{ event.title }} - {{ event.starttime | date: "%b %d, %Y" }}
-		p {{ event.content | strip_html | truncatewords:50 }}
+		{% if event.date > site.time %}
+		h4: a(href='{{ event.url }}') {{ event.title }} - {{ event.starttime | date: "%b %d, %Y" }}
+		p {{ event.content | strip_html | truncatewords:20 }}
+			a(href='{{ event.url }}') more info
 		{% endif %}
 		{% endfor %}
