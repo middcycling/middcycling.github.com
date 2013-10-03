@@ -8,5 +8,13 @@
 		hr
 
 .row
-	.twelve.columns
+	.eight.columns
 		{{ content }}
+	.four.columns
+		h4 The Details:
+		ul.circle
+			li Location: {{ page.location }}
+			li Start Time: {{ page.starttime | date: '%I:%M %p' }}
+			{% if page.endtime %}
+			li End Time: {{ page.endtime | date: '%I:%M %p' }}
+			{% endif %}

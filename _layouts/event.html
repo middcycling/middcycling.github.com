@@ -8,5 +8,13 @@ layout: default
   </div>
 </div>
 <div class="row">
-  <div class="twelve columns">{{ content }}</div>
+  <div class="eight columns">{{ content }}</div>
+  <div class="four columns">
+    <h4>The Details:</h4>
+    <ul class="circle">
+      <li>Location: {{ page.location }}</li>
+      <li>Start Time: {{ page.starttime | date: '%I:%M %p' }}</li>{% if page.endtime %}
+      <li>End Time: {{ page.endtime | date: '%I:%M %p' }}</li>{% endif %}
+    </ul>
+  </div>
 </div>
