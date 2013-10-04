@@ -11,10 +11,13 @@ $ ->
 	blurbpaths = [
 		'/blurbs/construction.html'
 		'/blurbs/strava.html'
+		'/blurbs/bikeshop.html'
+		'/blurbs/grouprides.html'
 	]
-	random = Math.round(Math.random()*blurbpaths.length);
+
+	random = Math.round(Math.random()*(blurbpaths.length - 1));
 	randompath = blurbpaths[random]
-	$('#blurb').load randompath
+	$('.blurb').load randompath
 
 console.log 'Hello.'
 # $ ->

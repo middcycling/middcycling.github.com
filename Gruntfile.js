@@ -52,14 +52,25 @@ module.exports = function(grunt) {
         }]
       }
     },
+    clean: {
+      dev: {
+        files: [{
+          expand: true, // Enable dynamic expansion.
+          cwd: '', // Src matches are relative to this path.
+          src: ['*.html', '_layouts/*.html', 'blurbs/*.html'], // Actual pattern(s) to match.
+          dest: '', // Destination path prefix.
+          ext: '.html', // Dest filepaths will have this extension.
+        }]
+      }
+    },
     'string-replace': {
       dev: {
         files: [{
-          expand: true,     // Enable dynamic expansion.
-          cwd: '',      // Src matches are relative to this path.
+          expand: true, // Enable dynamic expansion.
+          cwd: '', // Src matches are relative to this path.
           src: ['*.html', '_layouts/*.html'], // Actual pattern(s) to match.
-          dest: '',   // Destination path prefix.
-          ext: '.html',   // Dest filepaths will have this extension.
+          dest: '', // Destination path prefix.
+          ext: '.html', // Dest filepaths will have this extension.
         }],
         options: {
           replacements: [{
@@ -76,15 +87,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-string-replace');
 
   // Define tasks
   grunt.registerTask('build', [
+    'clean',
     'compass',
     'jade',
     'string-replace', // Must come right after 'jade'
     'coffee'
-    ]);
+  ]);
 
   // Register tasks
   grunt.registerTask('default', ['build']);

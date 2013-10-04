@@ -206,6 +206,9 @@ body { background: #fff; }
 .slider-container .control { position: relative; bottom: 25px; height: 8px; width: 200px; display: inline-block; margin: 0px auto; z-index: 500; background: red; }
 .slider-container .control .selector { height: 100%; width: 15px; margin: 0 10px 0 0; float: left; background: #fff; }
 
+.blurb { height: auto; width: auto; }
+.blurb img { display: block; margin: 5px auto; }
+
 .articlelist .date { font-size: 12px; }
 
 /**************

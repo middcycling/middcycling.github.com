@@ -3,7 +3,7 @@ layout: event
 category: events
 title: Trail Tuesday
 location: ADK Circle
-starttime: 2013-10-08 16:30:00
+starttime: 2013-10-08 16:30:00 -0400
 ---
 
 In the spirit of reviving last year's group rides, we will be riding mountain bikes every Tuesday afternoon for the rest of the fall! Bring your mountain bike and a friend to ADK circle at 4:30pm on Tuesday evening. Depending on the trail conditions, we'll ride the best trails that Battell and Means Woods and Chipman Hill have to offer.

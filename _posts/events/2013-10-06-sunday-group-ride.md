@@ -3,7 +3,7 @@ layout: event
 category: events
 title: Sunday Group Ride
 location: ADK Circle
-starttime: 2013-10-06 10:00:00
+starttime: 2013-10-06 10:00:00 -0400
 ---
 
 [Last week](https://www.facebook.com/photo.php?fbid=10200677618842931&set=o.107748225925892&type=3&theater), we had a blast riding to the [Vergennes Laundry](http://www.vergenneslaundry.com/index.html) on a chill Sunday group ride! There was a good turnout, the ride was spectacular, and the coffee was deliciously French.
