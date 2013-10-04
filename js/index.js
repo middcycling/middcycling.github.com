@@ -1,6 +1,7 @@
 (function() {
   $(function() {
-    return $('.index-slider').iosSlider({
+    var blurbpaths, random, randompath;
+    $('.index-slider').iosSlider({
       snapToChildren: true,
       snapSlideCenter: true,
       infiniteSlider: true,
@@ -9,18 +10,12 @@
       keyboardControls: false,
       scrollbar: false
     });
+    blurbpaths = ['/blurbs/construction.html', '/blurbs/strava.html'];
+    random = Math.round(Math.random() * blurbpaths.length);
+    randompath = blurbpaths[random];
+    return $('#blurb').load(randompath);
   });
 
-  $(function() {
-    return $('.blurb-slider').iosSlider({
-      snapToChildren: true,
-      snapSlideCenter: true,
-      infiniteSlider: true,
-      autoSlide: true,
-      autoSlideTimer: 2500,
-      keyboardControls: false,
-      scrollbar: false
-    });
-  });
+  console.log('Hello.');
 
 }).call(this);

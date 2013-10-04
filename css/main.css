@@ -200,15 +200,11 @@ body { background: #fff; }
 .responsive-height > .slider-container { position: absolute; width: 100%; height: 100%; overflow: hidden; }
 
 .index-slider { width: 100%; height: 100%; }
-.index-slider .slider2 { width: 100%; height: 100%; }
-.index-slider .slider2 .slide2 { float: left; width: 100%; height: 100%; }
+.index-slider .slider { width: 100%; height: 100%; }
+.index-slider .slider .slide { float: left; width: 100%; height: 100%; }
 
 .slider-container .control { position: relative; bottom: 25px; height: 8px; width: 200px; display: inline-block; margin: 0px auto; z-index: 500; background: red; }
 .slider-container .control .selector { height: 100%; width: 15px; margin: 0 10px 0 0; float: left; background: #fff; }
-
-.blurb-slider { position: relative; top: 0; left: 0; overflow: hidden; width: 100%; height: 500px; }
-.blurb-slider .slider { width: 100%; height: 100%; }
-.blurb-slider .slider .slide { float: left; width: 100%; height: 100%; }
 
 .articlelist .date { font-size: 12px; }
 

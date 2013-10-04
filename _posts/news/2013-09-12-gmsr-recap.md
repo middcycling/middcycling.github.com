@@ -18,5 +18,3 @@ Race results are posted on Velocity Results at the links below:
 * [Final General Classification](http://velocityresults.com/results/467/gmsr-gc)
 * [Final Sprint](http://velocityresults.com/results/469/gmsr-sprint)
 * [Final KOM](http://velocityresults.com/results/470/gmsr-kom)
-
-Photos from the event and more information to come.
