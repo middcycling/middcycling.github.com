@@ -3,7 +3,7 @@ layout: event
 category: events
 title: Circumburke
 location: Kingdom Trails
-starttime: 2013-10-27 10:00:00 -0400
+starttime: 2013-10-27 10:00:00
 ---
 
 We had so much fun at Circumburke last year that we're headed over there in 2013 to once again take on the challenges that only the trails at Burke Mountain can present!
