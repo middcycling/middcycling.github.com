@@ -1,2 +1,4 @@
 name: Middlebury Cycling
 pygments: true
+
+timezone: America/New_York
